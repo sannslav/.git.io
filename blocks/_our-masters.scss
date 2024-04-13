@@ -1,0 +1,123 @@
+.our-masters{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    width: 914px;
+    margin: 60px auto 0;
+
+    &__information {
+        display: flex;
+    }
+
+    &__title-services {
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+    }
+
+    &__services {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        margin-left: 104px;
+    }
+
+    &__service {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 223px;
+        height: 21px;
+    }
+
+        &__service-part-top {
+            display: flex;
+            gap: 1px;
+        }
+
+        &__service-part-top1 {
+            gap: 26px;
+        }
+
+    &__title {
+        width: 167px;
+        @include pink-title;
+        margin-left: 57px;
+    }
+
+    &__service-text {
+        font-size: 14px;
+        line-height: 16.23px;
+    }
+
+    &__service-text1 {
+        color: pink;
+    }
+
+    &__service-line {
+        width: 223px;
+        border: 1.5px solid #EFB7B7;
+        border-radius: 10px;
+    }
+
+    &__img-info {
+        margin-left: 20px;
+    }
+
+    &__img-info-body {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__info-title {
+        font-size: 24px;
+        line-height: 27.82px;
+        font-family: "Kudryashev Display";
+        color: $pink;
+    }
+
+    &__info-text {
+        font-size: 14px;
+        line-height: 16.23px;
+    }
+
+    &__info-subtitle,  &__info-experience{
+        margin-top: 5px;
+    }
+
+    &__info-experience {
+        font-size: 11px;
+        line-height: 12.75px;
+    }
+
+    &__info-text12 {
+        display: flex;
+        flex-direction: column;
+        width: 286px;
+        height: 125px;
+        justify-content: space-between;
+        margin-top: 43px; 
+    }
+
+    &__arrows {
+        display: flex;
+        flex-direction: column;
+        gap: 47px;
+        margin-top: 99px;
+        margin-left: 59px;
+    }
+
+    &__arrows-img1, &__arrows-img2 {
+        cursor: pointer;
+    }
+
+    &__button {
+        @include button;
+        margin-left: auto; margin-right: auto;
+        transition: 0.5s;
+    }
+
+    &__button:hover {
+        transform: scale(1.05);
+    }
+}

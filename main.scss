@@ -1,0 +1,63 @@
+@import "_nullstyle.scss";
+
+@font-face{
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Kudryashev Display";
+    src: url("fonts/KudryashevDisplaySans.ttf");
+}
+
+body {
+    font-family: "Montserrat";
+    min-width: 845px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: black;
+}
+
+.container {background-color: rgba(239, 239, 239, 0.511)}
+
+$pink: #EFB7B7;
+
+@mixin small-line {
+    width: 35px;
+    border: 1.2px solid #EFB7B7;
+} 
+
+@mixin button {
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $pink;
+    border-radius: 30px;
+    color: black;
+    font-size: 15px;
+    line-height: 17.39px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+@mixin pink-title {
+    font-family: "Kudryashev Display";
+    color: #EFB7B7;
+    font-size: 48px;
+    line-height: 45.07px;
+}
+
+@import "blocks/header";
+@import "blocks/first-visit";
+@import "blocks/services";
+@import "blocks/interier";
+@import "blocks/magazin";
+@import "blocks/our-masters";
+@import "blocks/our-instagram";
+@import "blocks/contacts";
+@import "blocks/footer"

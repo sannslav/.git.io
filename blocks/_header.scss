@@ -1,0 +1,73 @@
+.header {
+
+    &__first-line {
+        display: flex;
+        align-items: center;
+        width: 828px;
+        margin: 19px auto 10px;
+    }
+
+        &__line1, &__line2, &__line3  {
+            @include small-line;
+        }
+
+        &__logo {
+            margin-left: 14px;
+        }
+
+        &__line1 {
+            margin-left: 22px;
+        }
+
+        &__address {
+            margin-left: 9px;
+        }
+
+        &__line2, &__line3 {
+            margin-left: 11px;
+        }
+
+        &__time {
+            margin-left: 10px;
+        }
+
+        &__number {
+            margin-left: 10px;
+        }
+
+    &__body2 {
+        background-image: url("img/header-girl.svg");
+        display: flex;
+        background-size: 100%;
+    }
+
+    &__second-line {
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+        width: 799px;
+        height: 191px;
+        margin: 191px auto 100px;
+    }
+
+    &__hairdressing-img {
+        width: 100%;
+    }
+
+        &__slogan {
+            width: 503px;
+            height: 112px;
+            font-family: "Kudryashev Display";
+            font-size: 48px;
+            line-height: 55.63px;
+            color: white;
+        }
+
+        &__contacts {
+            display: flex;
+            gap: 31px;
+        }
+
+
+
+}

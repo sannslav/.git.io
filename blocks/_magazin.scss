@@ -1,0 +1,105 @@
+.magazin {
+    display: flex;
+    flex-direction: column;
+    width: 914px;
+    margin: 60px auto 0;
+
+    &__title {
+        width: 796px;
+        @include pink-title;
+        margin-left: auto; margin-right: auto;
+    }
+
+    &__soon-text {
+        font-size: 24px;
+        line-height: 22.54px;
+    }
+
+    &__products {
+        display: flex;
+        gap: 20px;
+        margin-top: 37px;
+        align-items: center;
+    }
+
+    &__product1, &__product2, &__product3, &__product4 {
+        width: 184px;
+        height: 290px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background-color: #fff;
+    }
+
+    &__products-img {
+        width: 121px;
+        margin: 6px auto 0; 
+    }
+
+    &__product-price, &__product-brand, &__product-name, &__product-button {
+        margin-left: 11px;
+    }
+
+    &__product-price {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 18.78px;
+        margin-top: 12px;
+    }
+
+    &__double-price {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+
+    &__product-price-sale {
+        color: $pink;
+    }
+
+    &__product-price-last {
+        font-size: 14px;
+        line-height: 13.15px;
+        text-decoration: line-through;
+    }
+
+    &__product-brand {
+        font-size: 15px;
+        line-height: 14.09px;
+        color: #A7A7A7;
+        margin-top: 10px;
+    }
+
+    &__product-name {
+        font-size: 15px;
+        line-height: 14.7px;
+        margin-top: 3px;
+    }
+
+    &__product-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 91px;
+        height: 22px;
+        font-size: 15px;
+        line-height: 14.09px;
+        background-color: $pink;
+        margin-top: 18px;
+        cursor: pointer;
+    }
+
+    &__button {
+        @include button;
+        margin: 31px auto 0;
+    }
+
+    &__arrow1, &__arrow2, &__button{
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    &__arrow1:hover, &__arrow2:hover, &__button:hover {
+        transform: scale(1.05);
+    }
+
+}
+

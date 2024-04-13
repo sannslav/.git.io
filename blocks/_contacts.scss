@@ -1,0 +1,54 @@
+.contacts {
+    display: flex;
+    gap: 65px;
+    width: 818px;
+    margin: 100px auto 71px;
+
+    &__title-points {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+    }
+
+    &__title {
+        width: 213px;
+        @include pink-title;
+    }
+
+    &__points {
+        display: flex;
+        flex-direction: column;
+        gap: 51.2px;
+    }
+
+    &__points-row1 {
+        display: flex;
+        gap: 57px;
+    }
+
+    &__points-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 15.4px;
+        margin-bottom: 13px;
+    }
+
+    &__points-subtitle {
+        font-size: 15px;
+        line-height: 18.29px;
+    }
+
+    &__points-networks-img {
+        display: flex;
+        gap: 23.3px;
+    }
+
+    &__points-place {
+        width: 154px;
+    }
+
+    &__points-row2 {
+        display: flex;
+        gap: 32px;
+    }
+}

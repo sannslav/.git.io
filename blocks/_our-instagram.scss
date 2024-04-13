@@ -1,0 +1,65 @@
+.our-instagram {
+    display: flex;
+    gap: 9px;
+    margin: 60px auto 0;
+    overflow: hidden;
+    width: 900px;
+
+    &__title-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    &__title {
+        width: 210px;
+        @include pink-title;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        margin-top: 131px;
+    }
+
+    &__info-text {
+        width: 233px;
+        font-size: 14px;
+        line-height: 15.4px;
+    }
+
+    &__info-href {
+        font-size: 14px;
+        line-height: 13.15px;
+        color: #494949;
+        text-decoration: underline;
+    }
+
+    &__photos {
+        display: flex;
+        flex-direction: column;
+        margin-top: 123px;
+        gap: 14px;
+    }
+
+    &__photos-img {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__photos-choise {
+        display: flex;
+        gap: 14.09px;
+        margin-left: auto; margin-right: auto;
+    }
+
+    &__photos-choise1, &__photos-choise2, &__photos-choise3 {
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    &__photos-choise1:hover,&__photos-choise2:hover, &__photos-choise3:hover {
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+
+    &__body {
+        display: flex;
+        gap: 15px;
+        width: 276px;
+        margin: 25px auto 22px;
+        align-items: center;
+    }
+
+    &__line {
+        width: 60px;
+        height: 1px;
+        border: 1.5px solid #EFB7B7;
+    }
+}

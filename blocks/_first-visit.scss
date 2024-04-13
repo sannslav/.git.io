@@ -1,0 +1,57 @@
+.first-visit {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    margin: 42px auto 0;
+
+    &__text {
+        font-size: 24px;
+        line-height: 28.82px;
+        color: $pink;
+    }
+
+    &__percent20 {
+        font-size: 36px;
+    }
+
+    &__input {
+        display: flex;
+        gap: 23px;
+        width: 388px;
+        margin: 19px auto 0;
+    }
+
+        &__input1, &__input2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__name, &__line4 {
+            width: 181px;
+        }
+
+        &__tel, &__line5 {
+            width: 184px;
+        }
+
+        &__line4, &__line5 {
+            border: 1px solid black;
+            margin-top: 6px;
+        }
+
+    &__button {
+        @include button;
+        margin: 27px auto 0;
+        transition: 0.5s;
+    }
+
+    &__button:hover {
+        transform: scale(1.05);
+    }
+
+    &__name, &__tel {
+        border-radius: 5px;
+        background-color: rgba(239, 239, 239, 0.511)
+    }
+}
+

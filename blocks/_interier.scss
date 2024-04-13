@@ -1,0 +1,26 @@
+.interier {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    width: 798px;
+    margin: 60px auto 0;
+
+    &__title {
+        width: 196px;
+        height: 90px;
+        @include pink-title;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 286px 184px 286px;
+        gap: 20px;
+    }
+
+    &__img2, &__img3 {
+        grid-column: span 2;
+    }
+
+    
+    
+}

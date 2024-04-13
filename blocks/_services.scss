@@ -1,0 +1,43 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    width: 798px;
+    margin: 40px auto 0;
+
+    &__title {
+        width: 159px;
+        height: 90px;
+        @include pink-title;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__hairdressing, &__nail-bar, &__brow-bar, &__epilation {
+        width: 388px;
+        height: 272px;
+        box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &__nail-bar, &__brow-bar, &__epilation {
+        background-color: #fff;
+    }
+
+    &__hairdressing {
+        background-color: $pink;
+    }
+
+    &__hairdressing-name, &__nail-bar-name, &__brow-bar-name, &__epilation-name {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 16.9px;
+        margin-top: 12px;
+    }
+
+}
